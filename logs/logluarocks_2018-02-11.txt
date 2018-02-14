@@ -1,0 +1,115 @@
+Installing https://luarocks.org/luasec-0.7alpha-2.src.rock
+Missing dependencies for luasec 0.7alpha-2:
+   luasocket (not installed)
+
+luasec 0.7alpha-2 depends on luasocket (not installed)
+Installing https://luarocks.org/luasocket-3.0rc1-2.src.rock
+gcc -O2 -fPIC -I/usr/include/lua5.2 -c src/buffer.c -o src/buffer.o -DLUA_COMPAT_APIINTCASTS -DLUASOCKET_DEBUG -DLUASOCKET_API=__attribute__((visibility("default"))) -DUNIX_API=__attribute__((visibility("default"))) -DMIME_API=__attribute__((visibility("default")))
+gcc -O2 -fPIC -I/usr/include/lua5.2 -c src/auxiliar.c -o src/auxiliar.o -DLUA_COMPAT_APIINTCASTS -DLUASOCKET_DEBUG -DLUASOCKET_API=__attribute__((visibility("default"))) -DUNIX_API=__attribute__((visibility("default"))) -DMIME_API=__attribute__((visibility("default")))
+gcc -O2 -fPIC -I/usr/include/lua5.2 -c src/options.c -o src/options.o -DLUA_COMPAT_APIINTCASTS -DLUASOCKET_DEBUG -DLUASOCKET_API=__attribute__((visibility("default"))) -DUNIX_API=__attribute__((visibility("default"))) -DMIME_API=__attribute__((visibility("default")))
+gcc -O2 -fPIC -I/usr/include/lua5.2 -c src/timeout.c -o src/timeout.o -DLUA_COMPAT_APIINTCASTS -DLUASOCKET_DEBUG -DLUASOCKET_API=__attribute__((visibility("default"))) -DUNIX_API=__attribute__((visibility("default"))) -DMIME_API=__attribute__((visibility("default")))
+gcc -O2 -fPIC -I/usr/include/lua5.2 -c src/io.c -o src/io.o -DLUA_COMPAT_APIINTCASTS -DLUASOCKET_DEBUG -DLUASOCKET_API=__attribute__((visibility("default"))) -DUNIX_API=__attribute__((visibility("default"))) -DMIME_API=__attribute__((visibility("default")))
+gcc -O2 -fPIC -I/usr/include/lua5.2 -c src/usocket.c -o src/usocket.o -DLUA_COMPAT_APIINTCASTS -DLUASOCKET_DEBUG -DLUASOCKET_API=__attribute__((visibility("default"))) -DUNIX_API=__attribute__((visibility("default"))) -DMIME_API=__attribute__((visibility("default")))
+gcc -O2 -fPIC -I/usr/include/lua5.2 -c src/serial.c -o src/serial.o -DLUA_COMPAT_APIINTCASTS -DLUASOCKET_DEBUG -DLUASOCKET_API=__attribute__((visibility("default"))) -DUNIX_API=__attribute__((visibility("default"))) -DMIME_API=__attribute__((visibility("default")))
+gcc -shared -o socket/serial.so -L/usr/lib src/buffer.o src/auxiliar.o src/options.o src/timeout.o src/io.o src/usocket.o src/serial.o
+gcc -O2 -fPIC -I/usr/include/lua5.2 -c src/luasocket.c -o src/luasocket.o -DLUA_COMPAT_APIINTCASTS -DLUASOCKET_DEBUG -DLUASOCKET_API=__attribute__((visibility("default"))) -DUNIX_API=__attribute__((visibility("default"))) -DMIME_API=__attribute__((visibility("default")))
+gcc -O2 -fPIC -I/usr/include/lua5.2 -c src/timeout.c -o src/timeout.o -DLUA_COMPAT_APIINTCASTS -DLUASOCKET_DEBUG -DLUASOCKET_API=__attribute__((visibility("default"))) -DUNIX_API=__attribute__((visibility("default"))) -DMIME_API=__attribute__((visibility("default")))
+gcc -O2 -fPIC -I/usr/include/lua5.2 -c src/buffer.c -o src/buffer.o -DLUA_COMPAT_APIINTCASTS -DLUASOCKET_DEBUG -DLUASOCKET_API=__attribute__((visibility("default"))) -DUNIX_API=__attribute__((visibility("default"))) -DMIME_API=__attribute__((visibility("default")))
+gcc -O2 -fPIC -I/usr/include/lua5.2 -c src/io.c -o src/io.o -DLUA_COMPAT_APIINTCASTS -DLUASOCKET_DEBUG -DLUASOCKET_API=__attribute__((visibility("default"))) -DUNIX_API=__attribute__((visibility("default"))) -DMIME_API=__attribute__((visibility("default")))
+gcc -O2 -fPIC -I/usr/include/lua5.2 -c src/auxiliar.c -o src/auxiliar.o -DLUA_COMPAT_APIINTCASTS -DLUASOCKET_DEBUG -DLUASOCKET_API=__attribute__((visibility("default"))) -DUNIX_API=__attribute__((visibility("default"))) -DMIME_API=__attribute__((visibility("default")))
+gcc -O2 -fPIC -I/usr/include/lua5.2 -c src/options.c -o src/options.o -DLUA_COMPAT_APIINTCASTS -DLUASOCKET_DEBUG -DLUASOCKET_API=__attribute__((visibility("default"))) -DUNIX_API=__attribute__((visibility("default"))) -DMIME_API=__attribute__((visibility("default")))
+gcc -O2 -fPIC -I/usr/include/lua5.2 -c src/inet.c -o src/inet.o -DLUA_COMPAT_APIINTCASTS -DLUASOCKET_DEBUG -DLUASOCKET_API=__attribute__((visibility("default"))) -DUNIX_API=__attribute__((visibility("default"))) -DMIME_API=__attribute__((visibility("default")))
+gcc -O2 -fPIC -I/usr/include/lua5.2 -c src/except.c -o src/except.o -DLUA_COMPAT_APIINTCASTS -DLUASOCKET_DEBUG -DLUASOCKET_API=__attribute__((visibility("default"))) -DUNIX_API=__attribute__((visibility("default"))) -DMIME_API=__attribute__((visibility("default")))
+gcc -O2 -fPIC -I/usr/include/lua5.2 -c src/select.c -o src/select.o -DLUA_COMPAT_APIINTCASTS -DLUASOCKET_DEBUG -DLUASOCKET_API=__attribute__((visibility("default"))) -DUNIX_API=__attribute__((visibility("default"))) -DMIME_API=__attribute__((visibility("default")))
+gcc -O2 -fPIC -I/usr/include/lua5.2 -c src/tcp.c -o src/tcp.o -DLUA_COMPAT_APIINTCASTS -DLUASOCKET_DEBUG -DLUASOCKET_API=__attribute__((visibility("default"))) -DUNIX_API=__attribute__((visibility("default"))) -DMIME_API=__attribute__((visibility("default")))
+gcc -O2 -fPIC -I/usr/include/lua5.2 -c src/udp.c -o src/udp.o -DLUA_COMPAT_APIINTCASTS -DLUASOCKET_DEBUG -DLUASOCKET_API=__attribute__((visibility("default"))) -DUNIX_API=__attribute__((visibility("default"))) -DMIME_API=__attribute__((visibility("default")))
+gcc -O2 -fPIC -I/usr/include/lua5.2 -c src/usocket.c -o src/usocket.o -DLUA_COMPAT_APIINTCASTS -DLUASOCKET_DEBUG -DLUASOCKET_API=__attribute__((visibility("default"))) -DUNIX_API=__attribute__((visibility("default"))) -DMIME_API=__attribute__((visibility("default")))
+gcc -shared -o socket/core.so -L/usr/lib src/luasocket.o src/timeout.o src/buffer.o src/io.o src/auxiliar.o src/options.o src/inet.o src/except.o src/select.o src/tcp.o src/udp.o src/usocket.o
+gcc -O2 -fPIC -I/usr/include/lua5.2 -c src/buffer.c -o src/buffer.o -DLUA_COMPAT_APIINTCASTS -DLUASOCKET_DEBUG -DLUASOCKET_API=__attribute__((visibility("default"))) -DUNIX_API=__attribute__((visibility("default"))) -DMIME_API=__attribute__((visibility("default")))
+gcc -O2 -fPIC -I/usr/include/lua5.2 -c src/auxiliar.c -o src/auxiliar.o -DLUA_COMPAT_APIINTCASTS -DLUASOCKET_DEBUG -DLUASOCKET_API=__attribute__((visibility("default"))) -DUNIX_API=__attribute__((visibility("default"))) -DMIME_API=__attribute__((visibility("default")))
+gcc -O2 -fPIC -I/usr/include/lua5.2 -c src/options.c -o src/options.o -DLUA_COMPAT_APIINTCASTS -DLUASOCKET_DEBUG -DLUASOCKET_API=__attribute__((visibility("default"))) -DUNIX_API=__attribute__((visibility("default"))) -DMIME_API=__attribute__((visibility("default")))
+gcc -O2 -fPIC -I/usr/include/lua5.2 -c src/timeout.c -o src/timeout.o -DLUA_COMPAT_APIINTCASTS -DLUASOCKET_DEBUG -DLUASOCKET_API=__attribute__((visibility("default"))) -DUNIX_API=__attribute__((visibility("default"))) -DMIME_API=__attribute__((visibility("default")))
+gcc -O2 -fPIC -I/usr/include/lua5.2 -c src/io.c -o src/io.o -DLUA_COMPAT_APIINTCASTS -DLUASOCKET_DEBUG -DLUASOCKET_API=__attribute__((visibility("default"))) -DUNIX_API=__attribute__((visibility("default"))) -DMIME_API=__attribute__((visibility("default")))
+gcc -O2 -fPIC -I/usr/include/lua5.2 -c src/usocket.c -o src/usocket.o -DLUA_COMPAT_APIINTCASTS -DLUASOCKET_DEBUG -DLUASOCKET_API=__attribute__((visibility("default"))) -DUNIX_API=__attribute__((visibility("default"))) -DMIME_API=__attribute__((visibility("default")))
+gcc -O2 -fPIC -I/usr/include/lua5.2 -c src/unix.c -o src/unix.o -DLUA_COMPAT_APIINTCASTS -DLUASOCKET_DEBUG -DLUASOCKET_API=__attribute__((visibility("default"))) -DUNIX_API=__attribute__((visibility("default"))) -DMIME_API=__attribute__((visibility("default")))
+gcc -shared -o socket/unix.so -L/usr/lib src/buffer.o src/auxiliar.o src/options.o src/timeout.o src/io.o src/usocket.o src/unix.o
+gcc -O2 -fPIC -I/usr/include/lua5.2 -c src/mime.c -o src/mime.o -DLUA_COMPAT_APIINTCASTS -DLUASOCKET_DEBUG -DLUASOCKET_API=__attribute__((visibility("default"))) -DUNIX_API=__attribute__((visibility("default"))) -DMIME_API=__attribute__((visibility("default")))
+gcc -shared -o mime/core.so -L/usr/lib src/mime.o
+luasocket 3.0rc1-2 is now installed in /home/kia/Self-Bot/.luarocks (license: MIT)
+
+gcc -O2 -fPIC -I/usr/include/lua5.2 -c src/config.c -o src/config.o -DWITH_LUASOCKET -DLUASOCKET_DEBUG -I/usr/include -Isrc/ -Isrc/luasocket
+gcc -O2 -fPIC -I/usr/include/lua5.2 -c src/ec.c -o src/ec.o -DWITH_LUASOCKET -DLUASOCKET_DEBUG -I/usr/include -Isrc/ -Isrc/luasocket
+gcc -O2 -fPIC -I/usr/include/lua5.2 -c src/x509.c -o src/x509.o -DWITH_LUASOCKET -DLUASOCKET_DEBUG -I/usr/include -Isrc/ -Isrc/luasocket
+gcc -O2 -fPIC -I/usr/include/lua5.2 -c src/context.c -o src/context.o -DWITH_LUASOCKET -DLUASOCKET_DEBUG -I/usr/include -Isrc/ -Isrc/luasocket
+gcc -O2 -fPIC -I/usr/include/lua5.2 -c src/ssl.c -o src/ssl.o -DWITH_LUASOCKET -DLUASOCKET_DEBUG -I/usr/include -Isrc/ -Isrc/luasocket
+gcc -O2 -fPIC -I/usr/include/lua5.2 -c src/luasocket/buffer.c -o src/luasocket/buffer.o -DWITH_LUASOCKET -DLUASOCKET_DEBUG -I/usr/include -Isrc/ -Isrc/luasocket
+gcc -O2 -fPIC -I/usr/include/lua5.2 -c src/luasocket/io.c -o src/luasocket/io.o -DWITH_LUASOCKET -DLUASOCKET_DEBUG -I/usr/include -Isrc/ -Isrc/luasocket
+gcc -O2 -fPIC -I/usr/include/lua5.2 -c src/luasocket/timeout.c -o src/luasocket/timeout.o -DWITH_LUASOCKET -DLUASOCKET_DEBUG -I/usr/include -Isrc/ -Isrc/luasocket
+gcc -O2 -fPIC -I/usr/include/lua5.2 -c src/luasocket/usocket.c -o src/luasocket/usocket.o -DWITH_LUASOCKET -DLUASOCKET_DEBUG -I/usr/include -Isrc/ -Isrc/luasocket
+gcc -shared -o ssl.so -L/usr/lib src/config.o src/ec.o src/x509.o src/context.o src/ssl.o src/luasocket/buffer.o src/luasocket/io.o src/luasocket/timeout.o src/luasocket/usocket.o -L/usr/lib/x86_64-linux-gnu -Wl,-rpath,/usr/lib/x86_64-linux-gnu: -lssl -lcrypto
+luasec 0.7alpha-2 is now installed in /home/kia/Self-Bot/.luarocks (license: MIT)
+
+Installing https://luarocks.org/luarepl-0.8-1.rockspec
+luarepl 0.8-1 is now installed in /home/kia/Self-Bot/.luarocks (license: MIT/X11)
+
+Installing https://luarocks.org/lbase64-20120807-3.src.rock
+gcc -O2 -fPIC -I/usr/include/lua5.2 -c lbase64.c -o lbase64.o
+gcc -shared -o base64.so -L/usr/lib lbase64.o
+lbase64 20120807-3 is now installed in /home/kia/Self-Bot/.luarocks (license: Public domain)
+
+Installing https://luarocks.org/luafilesystem-1.7.0-2.src.rock
+gcc -O2 -fPIC -I/usr/include/lua5.2 -c src/lfs.c -o src/lfs.o
+gcc -shared -o lfs.so -L/usr/lib src/lfs.o
+luafilesystem 1.7.0-2 is now installed in /home/kia/Self-Bot/.luarocks (license: MIT/X11)
+
+Installing https://luarocks.org/lub-1.1.0-1.src.rock
+lub 1.1.0-1 is now installed in /home/kia/Self-Bot/.luarocks (license: MIT)
+
+Installing https://luarocks.org/luaexpat-1.3.0-1.src.rock
+gcc -O2 -fPIC -I/usr/include/lua5.2 -c src/lxplib.c -o src/lxplib.o -I/usr/include -Isrc/
+gcc -shared -o lxp.so -L/usr/lib src/lxplib.o -L/usr/lib -Wl,-rpath,/usr/lib: -lexpat
+luaexpat 1.3.0-1 is now installed in /home/kia/Self-Bot/.luarocks (license: MIT/X11)
+
+Installing https://luarocks.org/redis-lua-2.0.4-1.src.rock
+redis-lua 2.0.4-1 is now installed in /home/kia/Self-Bot/.luarocks (license: MIT/X11)
+
+Installing https://luarocks.org/lua-cjson-2.1.0-1.src.rock
+In file included from lua_cjson.c:47:0:
+fpconv.h:15:20: warning: inline function ‘fpconv_init’ declared but never defined
+ extern inline void fpconv_init();
+                    ^
+gcc -O2 -fPIC -I/usr/include/lua5.2 -c lua_cjson.c -o lua_cjson.o
+gcc -O2 -fPIC -I/usr/include/lua5.2 -c strbuf.c -o strbuf.o
+gcc -O2 -fPIC -I/usr/include/lua5.2 -c fpconv.c -o fpconv.o
+gcc -shared -o cjson.so -L/usr/lib lua_cjson.o strbuf.o fpconv.o
+lua-cjson 2.1.0-1 is now installed in /home/kia/Self-Bot/.luarocks (license: MIT)
+
+Installing https://luarocks.org/fakeredis-0.5-1.src.rock
+fakeredis 0.5-1 is now installed in /home/kia/Self-Bot/.luarocks (license: MIT/X11)
+
+Installing https://luarocks.org/xml-1.1.3-1.src.rock
+gcc -O2 -fPIC -I/usr/include/lua5.2 -c src/Parser.cpp -o src/Parser.o -Iinclude -Isrc/bind -Isrc/vendor
+gcc -O2 -fPIC -I/usr/include/lua5.2 -c src/bind/dub/dub.cpp -o src/bind/dub/dub.o -Iinclude -Isrc/bind -Isrc/vendor
+gcc -O2 -fPIC -I/usr/include/lua5.2 -c src/bind/xml_Parser.cpp -o src/bind/xml_Parser.o -Iinclude -Isrc/bind -Isrc/vendor
+gcc -O2 -fPIC -I/usr/include/lua5.2 -c src/bind/xml_core.cpp -o src/bind/xml_core.o -Iinclude -Isrc/bind -Isrc/vendor
+gcc -shared -o xml/core.so -L/usr/lib src/Parser.o src/bind/dub/dub.o src/bind/xml_Parser.o src/bind/xml_core.o -lstdc++
+xml 1.1.3-1 is now installed in /home/kia/Self-Bot/.luarocks (license: MIT)
+
+Installing https://luarocks.org/feedparser-0.71-3.src.rock
+feedparser 0.71-3 is now installed in /home/kia/Self-Bot/.luarocks (license: BSD)
+
+Installing https://luarocks.org/serpent-0.28-1.rockspec
+Cloning into 'serpent'...
+Note: checking out 'd625641f65a8774baee7e661ea86bb949e0ba97b'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b <new-branch-name>
+
+serpent 0.28-1 is now installed in /home/kia/Self-Bot/.luarocks (license: MIT)
+
