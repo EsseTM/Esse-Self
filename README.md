@@ -14,15 +14,17 @@ chmod +x E
 **************************
 ./E config
 **************************
-## ارسال شماره و تأیید کد و دستور پایین را بزنبید
+ ## ارسال شماره و تأیید کد و دستور پایین را بزنید
 
 ./E login-Cli
 
-# Go To Esse-Self/Bot/bot.lua & edit line 2 and replace sudoID
+**Go To Esse-Self/Bot/bot.lua & edit line 2 and replace sudoID**
 
-# Go To Esse-Self/Bot/utils.lua &Edit line 2&3 and replace SudoID
+**Go To Esse-Self/Bot/utils.lua &Edit line 2&3 and replace SudoID**
 *********************************
-## screen ./Co*
+**Lucnch Self-Bot:**
+
+screen ./Co*
 *********************************
 
 [EsseTM](https://telegram.me/EsseTM)
