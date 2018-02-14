@@ -1629,10 +1629,14 @@ if cerner == 'esse' and is_sudo(msg) then
 local esse = [[
 <i>EssE-Self V1.0</i>
 ○●○●○●○●○●○
+<b>GitHub</b>: https://github.com/EsseTM/Esse-Self
+○●○●○●○●○●○
 <b>Created by</b>: @EssETM
 ★☆★☆★☆★☆
 <b>Dev:</b> @Sudo_Hack
-
+★☆★☆★☆★☆
+Manager: @TaiTel
+ □■□■□■□■□     
 <i>Tnx To</i> : AmirBagheri
 
  <b>Special Tnx To:</b>
