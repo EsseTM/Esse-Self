@@ -235,7 +235,7 @@ local text = [[
  ₪ تبدیل عکس به استیکر
  @EssETM
 ]]
-tdbot.sendText(chat_id,msg.id,text,'html')
+tdbot.send(chat_id,msg.id,text,'html')
 end
 if is_private(msg) and not is_sudo(msg) then
 if cerner and not redis:get(my..'Time'..msg.sender_user_id) then 
